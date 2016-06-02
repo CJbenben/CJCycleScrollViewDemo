@@ -183,26 +183,31 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     self.currentIndex = scrollView.contentOffset.x / iPhoneW;
     
+    NSLog(@"self.currentIndex:%.2f",self.currentIndex);
+    
     CGRect frame = CGRectMake(iPhoneW, 0, iPhoneW, scrollView.frame.size.height);
     
     if (scrollView == self.scrollView) {
-        self.pageControl.currentPage = self.currentIndex - 1;
-        if (self.currentIndex - 1 == self.imageCount) {
-            frame.origin.x = iPhoneW;
-            self.x = frame.origin.x;
-            [self.scrollView scrollRectToVisible:frame animated:NO];
-        }else if (self.currentIndex == 0){
-            frame.origin.x = iPhoneW * self.imageCount;
-            self.x = frame.origin.x;
-            [self.scrollView scrollRectToVisible:frame animated:NO];
-        }else{
-            self.x = self.currentIndex * iPhoneW;
+        
+        if ((NSInteger)self.currentIndex == self.currentIndex) {//判断整数
+            self.pageControl.currentPage = self.currentIndex - 1;
+            if (self.currentIndex - 1 == self.imageCount) {
+                frame.origin.x = iPhoneW;
+                self.x = frame.origin.x;
+                [self.scrollView scrollRectToVisible:frame animated:NO];
+            }else if (self.currentIndex == 0){
+                frame.origin.x = iPhoneW * self.imageCount;
+                self.x = frame.origin.x;
+                [self.scrollView scrollRectToVisible:frame animated:NO];
+            }else{
+                self.x = self.currentIndex * iPhoneW;
+//                [[NSNotificationCenter defaultCenter] postNotificationName:CHANGEBACKGROUNDIMAGEVIEW object:[NSNumber numberWithFloat:self.currentIndex]];
+            }
         }
     }else if (scrollView == self.scrollView){//预留
         self.pageControl.currentPage = self.currentIndex - 1;
     }
     
-//    [[NSNotificationCenter defaultCenter] postNotificationName:CHANGEBACKGROUNDIMAGEVIEW object:[NSNumber numberWithFloat:self.currentIndex]];
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
