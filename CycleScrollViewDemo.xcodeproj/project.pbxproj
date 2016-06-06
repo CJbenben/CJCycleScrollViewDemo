@@ -32,6 +32,7 @@
 		F50C64D91CD899D200CDE335 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F50C64C71CD899D200CDE335 /* UIImageView+HighlightedWebCache.m */; };
 		F50C64DA1CD899D200CDE335 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F50C64C91CD899D200CDE335 /* UIImageView+WebCache.m */; };
 		F50C64DB1CD899D200CDE335 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F50C64CB1CD899D200CDE335 /* UIView+WebCacheOperation.m */; };
+		F534B16F1D05447F008C4397 /* 使用方法 in Resources */ = {isa = PBXBuildFile; fileRef = F534B16E1D05447F008C4397 /* 使用方法 */; };
 		F54A3BB81CDB381B00EBDB0F /* CJTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54A3BB71CDB381B00EBDB0F /* CJTableViewController.m */; };
 		F54A3BBB1CDB3FD500EBDB0F /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54A3BBA1CDB3FD500EBDB0F /* ThirdViewController.m */; };
 		F54A3BBE1CDB42F200EBDB0F /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54A3BBD1CDB42F200EBDB0F /* FourViewController.m */; };
@@ -109,6 +110,7 @@
 		F50C64C91CD899D200CDE335 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		F50C64CA1CD899D200CDE335 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		F50C64CB1CD899D200CDE335 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		F534B16E1D05447F008C4397 /* 使用方法 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "使用方法"; sourceTree = "<group>"; };
 		F54A3BB61CDB381B00EBDB0F /* CJTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTableViewController.h; sourceTree = "<group>"; };
 		F54A3BB71CDB381B00EBDB0F /* CJTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJTableViewController.m; sourceTree = "<group>"; };
 		F54A3BB91CDB3FD500EBDB0F /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				F50C64A41CD8997300CDE335 /* CycleScrollView.m */,
 				F50C64A51CD8997300CDE335 /* NSTimer+Addition.h */,
 				F50C64A61CD8997300CDE335 /* NSTimer+Addition.m */,
+				F534B16E1D05447F008C4397 /* 使用方法 */,
 			);
 			path = Version2.0;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				F50C649B1CD898AF00CDE335 /* banner5.png in Resources */,
 				F50C64991CD898AF00CDE335 /* banner3.png in Resources */,
 				F50C64971CD898AF00CDE335 /* banner1.png in Resources */,
+				F534B16F1D05447F008C4397 /* 使用方法 in Resources */,
 				F5D48ABA1BE1B27F0046E4CA /* LaunchScreen.storyboard in Resources */,
 				F50C649C1CD898AF00CDE335 /* banner6.png in Resources */,
 				F5D48AB71BE1B27F0046E4CA /* Assets.xcassets in Resources */,

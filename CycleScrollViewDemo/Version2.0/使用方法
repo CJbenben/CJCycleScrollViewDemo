@@ -1,0 +1,10 @@
+/******有关CJCycleScollView使用方法和步骤问题******/
+1.在github上下载本demo~~~https://github.com/CJbenben/CJCycleScrollViewDemo
+2.将version2.0文件夹导入工程中
+3.定义一个变量@property (strong, nonatomic) CJCycleScrollView *scrollView1;
+4.CJCycleScrollView类中提供了若干类方法，供用户所选择
+5.pageControllPostion：顾名思义，page位置
+6.TapActionBlock：视图点击block
+/******正常需要开定时器的需添加以下代码******/
+7.视图完全消失时(viewDidDisappear) 暂停定时器(pauseTimer)
+8.视图即将出现时(viewWillAppear) 开启定时器(resumeTimerAfterTimeInterval)
